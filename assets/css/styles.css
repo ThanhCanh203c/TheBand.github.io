@@ -1,0 +1,427 @@
+/* Common */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+.row {
+    margin: 0 -8px;
+}
+
+.row:after {
+    content: "";
+    display: block;
+    clear: both;   
+}
+
+.col {
+    float: left;
+    padding: 0 8px;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-3 {
+    width: calc(100%/3);
+}
+
+/* Another */
+#header {
+    height: 46px;
+    background-color: #000;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    max-width: 100%;
+}
+
+#nav {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+
+#nav > li:first-child {
+    display: inline-block;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    list-style: none;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 24px;
+    line-height: 46px;
+}
+
+#nav li a {
+    display: block;
+    text-decoration: none;
+}
+
+
+#nav > li:hover > a,
+.subnav li:hover a,
+button.buy-tickets:hover,
+button.send:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+#nav .subnav {
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0 2px 5px -1px rgb(0 0 0 / 50%);
+    display: none;
+    background-color: #fff;
+}
+
+.subnav li a {
+    color: #000;
+    line-height: 38px;
+    padding: 0 12px;
+}
+
+#nav li:hover .subnav {
+    display: block;
+    z-index: 1;
+}
+
+.search-btn,
+.mobile-menu-btn {
+    float: right;
+    color: #fff;
+    padding: 14.5px 23px;
+    cursor: pointer;
+}
+
+.search-btn:hover{
+    background-color: #f44336;
+}
+
+.mobile-menu-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.mobile-menu-btn {
+    display: none;
+}
+
+#wallpaper {
+    background: url(/Front/assets/img/wallpaper/la.jpg) center /cover;
+    padding-top: 50%;
+    position: relative;
+    margin-top: 46px;
+}
+
+.wall-content {
+    max-width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 46px;
+    text-align: center;
+    color: #fff;
+}
+
+.wall-title {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.wall-description {
+    font-weight: bold;
+}
+
+
+.content-section {
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px 16px 110px;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: lighter;
+}
+
+.section-sub-heading {
+    text-align: center;
+    margin: 15px 0;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+.section-paragraph {
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.member {
+    margin-top: 64px;
+    text-align: center;
+}
+
+.member-name {
+    margin-bottom: 15px;
+}
+
+.member-img {
+    width: 154px;
+    border-radius: 4px;
+}
+
+#tour {
+    background-color: #000;
+}
+
+#tour .content-section {
+    color: #fff;
+}
+
+ul.tour-dates {
+    list-style: none;
+    margin-top: 40px;
+    margin-bottom: 32px;
+}
+
+.tour-dates li {
+    line-height: 39.5px;
+    background-color: #fff;
+    color: #757575;
+    padding: 0 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+span.sold-out {
+    color: #fff;
+    background-color: #f44336;
+    padding: 4px 7px;
+    margin-left: 8px;
+}
+
+span.quantily {
+    float: right;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    padding: 6px 9px;
+    margin-top: 8px;
+    line-height: 1;
+}
+
+.place-img {
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.7;
+}
+
+.place-body {
+    background-color: #fff;
+    color: #000;
+    padding: 16px;
+}
+
+p.place-date {
+    opacity: 0.6;
+    margin: 16px 0;
+}
+
+button.send,
+button.buy-tickets {
+    font-size: 15px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    margin-top: 16px;
+    padding: 11px 20px;
+    display: block;
+}
+
+#contact .section-sub-heading {
+    margin-bottom: 48px;
+    font-size: 15px;
+}
+
+#contact i[class*="ti-"] {
+    text-align: left;
+    padding: 12px;
+}
+
+#contact {
+    font-size: 18px;
+}
+
+.contact-info a:hover{
+    opacity: 0.7;
+}
+
+input.contact-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+button.send {
+    margin-top: 8px;
+    float: right;
+}
+
+img.map {
+    width: 100%;
+}
+
+#footer {
+    text-align: center  ;
+    font-size: 15px;
+}
+
+.social-icon {
+    margin-bottom: 24px;
+}
+
+.social-icon i {
+    opacity: .6;
+    font-size: 24px;
+    padding: 2px;
+    margin: 0 8px;
+}
+
+.social-icon i:hover {
+    opacity: 0.8;
+}
+
+#footer p {
+    color:#000;
+    opacity: 0.6;
+}
+
+#footer a {
+    color:#000;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    display: none;
+}
+
+#modal-box {
+    width: 900px;
+    min-height: 400px;
+    margin: 8px;
+    background-color: #fff;
+    animation: ease FadeIn 0.35s;
+}
+
+.modal-heading {
+    text-align: center;
+    background-color: #009688;
+    padding: 47px;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+#modal-content {
+    padding: 16px;
+}
+
+.close-btn {
+    float: right;
+    color: #fff;
+    padding: 16px;
+}
+
+label.modal-label {
+    display: block;
+}
+
+input.modal-input {
+    width: 100%;
+    display: block;
+    padding: 11px;
+    margin: 8px 0 16px;
+    border: 1px solid #ccc;
+}
+
+button.modal-pay-btn {
+    width: 100%;
+    border: none;
+    padding: 16px;
+    background-color: #009688;
+    color: #fff;
+    font-size: 18px;
+}
+
+p.need-help {
+    float: right;
+    padding: 16px;
+}
+
+p.need-help a {
+    color: #2196F3;
+}
+
+button.modal-pay-btn:hover,
+.close-btn:hover {
+    background-color: #ccc;
+    color:#000;
+    cursor: pointer;
+}
+
+.show {
+    display: flex!important;
+}
+
+
+/* Key frames */
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

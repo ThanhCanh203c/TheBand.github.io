@@ -1,0 +1,100 @@
+/* Tablet and Mobile*/
+@media (max-width: 1023px){
+    button.send, button.buy-tickets {
+        padding: 15px 20px;
+    }
+
+    input.contact-input {
+        padding: 12px;
+    }
+
+    .social-icon i {
+        font-size: 32px;
+    }
+
+    #footer p {
+        display: inline-block;
+        padding: 18px 0;
+    }
+
+    #footer a {
+        padding: 14px 8px;
+    }
+
+    .subnav li a {
+        line-height: 48px;
+    }
+
+    .contact-info {
+        line-height: 1.8;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 740px) {
+    #header {
+        overflow: hidden;
+    }
+
+    #nav > li {
+        display: block;
+    }
+
+    .search-btn {
+        display: none;
+    }
+
+    .s-col-ful {
+        width: 100%;
+    }
+
+    .member-img {
+        width: 205px;
+    }
+
+    .wall-content {
+        display: none;
+    }
+
+    .place-img {
+        margin-top: 16px;
+    }
+
+    #contact i[class*="ti-"] {
+        text-align: left;
+        padding: 0;
+    }
+
+    .name-email-input {
+        margin-top: 32px;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+        position: absolute;
+        top:0;
+        right: 0;
+    }
+
+    #nav {
+        display: block;
+        position: relative;
+    }
+
+    #nav .subnav {
+        position: initial;
+        background-color: #333;
+    }
+
+    .subnav li a {
+        color:#fff; 
+        padding: 5px 42px;
+    }
+
+    button.send,
+    button.buy-tickets {
+        width: 100%;
+        text-align: center;
+    }
+}

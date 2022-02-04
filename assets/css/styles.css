@@ -127,7 +127,7 @@ button.send:hover {
 }
 
 #wallpaper {
-    background: url(https://www.w3schools.com/w3images/la.jpg) center /cover;
+    background: url(../img/wallpaper/la.jpg) center /cover;
     padding-top: 50%;
     position: relative;
     margin-top: 46px;
